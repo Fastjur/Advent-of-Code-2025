@@ -1,0 +1,20 @@
+{
+  "name": "aoc2025",
+  "version": "1.0.0",
+  "description": "Advent of Code 2025 solutions by Fastjur",
+  "homepage": "https://github.com/Fastjur/Advent-of-Code-2025#readme",
+  "bugs": {
+    "url": "https://github.com/Fastjur/Advent-of-Code-2025/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fastjur/Advent-of-Code-2025.git"
+  },
+  "license": "MIT",
+  "author": "Jurriaan Den Toonder",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
