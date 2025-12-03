@@ -7,16 +7,16 @@ import { time } from './cli/time.js';
 const args = process.argv.slice(2);
 const command = args[0];
 
+// Helper to filter out debug flags from args
+function filterDebugFlags(args: string[]): string[] {
+  return args.filter((arg) => arg !== '--debug' && arg !== '--no-debug');
+}
+
 // Helper to check for --debug or --no-debug flags
 function getDebugFlag(defaultValue: boolean): boolean {
   if (args.includes('--debug')) return true;
   if (args.includes('--no-debug')) return false;
   return defaultValue;
-}
-
-// Helper to filter out debug flags from args
-function filterDebugFlags(args: string[]): string[] {
-  return args.filter((arg) => arg !== '--debug' && arg !== '--no-debug');
 }
 
 async function main() {
